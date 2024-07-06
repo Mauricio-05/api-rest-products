@@ -1,0 +1,14 @@
+version: "3.1"
+name: app-products
+
+services:
+    books_db_dev:
+        image: postgres
+        container_name: products_db
+        restart: always
+        ports:
+            - "5441:5432"
+        environment:
+            POSTGRES_USER: product_user
+            POSTGRES_PASSWORD: product05*24.
+            POSTGRES_DB: products
